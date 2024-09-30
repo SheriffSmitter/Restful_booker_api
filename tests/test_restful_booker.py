@@ -7,16 +7,17 @@ from restful_booker.utils.help_functions import (get_token, create_booking, put_
                                                       post_request, delete_request)
 
 
-@allure.tag("Diploma")
+@allure.tag("Restful_booker")
 @allure.tag("API")
-@allure.severity(Severity.NORMAL)
+@allure.severity(Severity.CRITICAL)
 @allure.feature("Дипломный проект")
+@allure.label('owner', 'Vadim Korolev')
 def test_create_booking(default_url):
     schema = load_schema('create_booking.json')
     headers = {'Content-Type': 'application/json'}
     booking = {
-        "firstname": "Jhon",
-        "lastname": "Black",
+        "firstname": "Vadim",
+        "lastname": "Korolev",
         "totalprice": 111000,
         "depositpaid": False,
         "bookingdates": {
@@ -36,10 +37,11 @@ def test_create_booking(default_url):
         assert result.json()['booking']['totalprice'] == 111000
 
 
-@allure.tag("Diploma")
+@allure.tag("Restful_booker")
 @allure.tag("API")
-@allure.severity(Severity.NORMAL)
+@allure.severity(Severity.CRITICAL)
 @allure.feature("Дипломный проект")
+@allure.label('owner', 'Vadim Korolev')
 def test_get_booking(default_url):
     id = create_booking()
     schema = load_schema('get_booking.json')
@@ -55,10 +57,11 @@ def test_get_booking(default_url):
         assert result.json()['firstname'] == 'Tom'
 
 
-@allure.tag("Diploma")
+@allure.tag("Restful_booker")
 @allure.tag("API")
-@allure.severity(Severity.NORMAL)
+@allure.severity(Severity.CRITICAL)
 @allure.feature("Дипломный проект")
+@allure.label('owner', 'Vadim Korolev')
 def test_ping_healthcheck_status_code(default_url):
     with allure.step('Отправить GET запрос на эндпоинт "/ping"'):
         result = get_request_without_json_response('/ping')
@@ -66,10 +69,11 @@ def test_ping_healthcheck_status_code(default_url):
         assert result.status_code == 201
 
 
-@allure.tag("Diploma")
+@allure.tag("Restful_booker")
 @allure.tag("API")
-@allure.severity(Severity.NORMAL)
+@allure.severity(Severity.CRITICAL)
 @allure.feature("Дипломный проект")
+@allure.label('owner', 'Vadim Korolev')
 def test_delete_booking(default_url):
     token_func = get_token()
     token = f'token={token_func}'
@@ -82,10 +86,11 @@ def test_delete_booking(default_url):
         assert result.status_code == 201
 
 
-@allure.tag("Diploma")
+@allure.tag("Restful_booker")
 @allure.tag("API")
-@allure.severity(Severity.NORMAL)
+@allure.severity(Severity.CRITICAL)
 @allure.feature("Дипломный проект")
+@allure.label('owner', 'Vadim Korolev')
 def test_update_booking(default_url):
     token_func = get_token()
     token = f'token={token_func}'
