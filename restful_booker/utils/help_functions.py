@@ -17,8 +17,8 @@ def get_token():
 def create_booking():
     headers = {'Content-Type': 'application/json'}
     booking = {
-        "firstname": "Vadim",
-        "lastname": "Korolev",
+        "firstname": "Tom",
+        "lastname": "Soyer",
         "totalprice": 111222,
         "depositpaid": False,
         "bookingdates": {
