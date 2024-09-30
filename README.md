@@ -2,7 +2,7 @@
 
 ><a target="_blank" href="https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth">Restful-booker</a>
 > 
-![main page screenshot](pictures/Petstore_API_main_page.png)
+![main page screenshot](pictures/restful_booker_main_page.png)
 
 ---
 ### Список проверок, реализованных в автотестах
@@ -15,15 +15,15 @@
 ---
 
 ### Используемые инструменты
-<img title="Python" src="pictures/icons/python.svg" height="40" width="40"/> <img title="Pytest" src="pictures/icons/pytest.svg" height="40" width="40"/> <img title="Allure Report" src="pictures/icons/allure_report.png" height="40" width="40"/> <img title="GitHub" src="pictures/icons/github.svg" height="40" width="40"/> <img title="Pycharm" src="pictures/icons/pycharm-original.svg" height="40" width="40"/> <img title="Telegram" src="pictures/icons/telegram.png" height="40" width="40"/> <img title="Jenkins" src="pictures/icons/jenkins-original.svg" height="40" width="40"/> <img title="Requests" src="pictures/icons/requests.png" height="40" width="40"/>  <img title="Jira" src="pictures/icons/jira.svg" height="40" width="40"/>
+<img title="Python" src="pictures/icons/python.svg" height="40" width="40"/> <img title="Pytest" src="pictures/icons/pytest.svg" height="40" width="40"/> <img title="Allure Report" src="pictures/icons/allure_report.png" height="40" width="40"/> <img title="GitHub" src="pictures/icons/github.svg" height="40" width="40"/> <img title="Pycharm" src="pictures/icons/pycharm-original.svg" height="40" width="40"/> <img title="Telegram" src="pictures/icons/telegram.png" height="40" width="40"/> <img title="Jenkins" src="pictures/icons/jenkins-original.svg" height="40" width="40"/>  <img title="Jira" src="pictures/icons/jira.svg" height="40" width="40"/>
 
 ---
 
 ### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Vadim_Korolev_Petstore_api/)
+> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Restful_booker_api/)
 
 #### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Vadim_Korolev_Petstore_api/)
+1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Restful_booker_api/)
 
 ![jenkins job main page](pictures/Jenkins_job_main_page.png)
 
@@ -33,16 +33,17 @@
 
 ### Allure отчет
 
-![allure_report page](pictures/allure_report_page.png)
+![allure_report page](pictures/allure_report_main_page.png)
 
 ---
 
 ### Интеграция с Allure TestOps
 
-> [Job #4397 Vadim Korolev Petstore api](https://allure.autotests.cloud/project/4397)
+> [Job #4397 Vadim Korolev Petstore api](https://allure.autotests.cloud/project/4462)
 
-![allure_testops job](pictures/allure_testops_job.png)
-
+![allure_testops job](pictures/allure_testops_dashboard.png)
+![allure_testops job](pictures/allure_report_graph_1.png)
+![allure_testops job](pictures/allure_report_graph_2.png)
 ---
 
 ### Интеграция с Jira
