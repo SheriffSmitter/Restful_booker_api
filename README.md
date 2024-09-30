@@ -34,7 +34,8 @@
 ### Allure отчет
 
 ![allure_report page](pictures/allure_report_main_page.png)
-
+![allure_report_graph](pictures/allure_report_graph_1.png)
+![allure_report_graph](pictures/allure_report_graph_2.png)
 ---
 
 ### Интеграция с Allure TestOps
@@ -42,8 +43,8 @@
 > [Job #4397 Vadim Korolev Petstore api](https://allure.autotests.cloud/project/4462)
 
 ![allure_testops job](pictures/allure_testops_dashboard.png)
-![allure_testops job](pictures/allure_report_graph_1.png)
-![allure_testops job](pictures/allure_report_graph_2.png)
+![allure_testops job](pictures/allure_testops_test_cases.png)
+
 ---
 
 ### Интеграция с Jira
